@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparência Digital - MPBA</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ======================================== -->
+    <!-- HEADER -->
+    <!-- ======================================== -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/LogoMPBA.png" alt="Logo Ministério Público da Bahia">
+            </a>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="pags/area-atuacao/area-atuacao.html">Área de Atuação</a></li>
+                    <li><a href="pags/area-servidor/area-servidor.html">Área do Servidor</a></li>
+                    <li><a href="pags/conhecendo-mpba/conhecendo-mpba.html">Conhecendo o MPBA</a></li>
+                    <li><a href="pags/conhecendo-mpba/conhecendo-mpba.html">Comunicação</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-mobile" onclick="document.querySelector('.nav ul').classList.toggle('active')">☰</div>
+       
+        </div>
+        <a href="pags/area-servidor/area-servidor.html" class="btn-servidor">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+    </svg>
+    Área do Servidor
+</a>
+
+    </header>
+
+    <!-- ======================================== -->
+    <!-- HERO -->
+    <!-- ======================================== -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transparência Digital</h1>
+            <p>Portal de acesso às informações institucionais do Ministério Público do Estado da Bahia</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Cards da home (exemplo) -->
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 2rem; text-align: center;">
+                    <div class="card">
+                        <img src="img/LogoMPBA.png" alt="" style="width:80px; margin-bottom:1rem;">
+                        <h3>Área de Atuação</h3>
+                        <p>Conheça as promotorias e procuradorias</p>
+                        <a href="pages/area-atuacao.html" class="btn">Acessar</a>
+                    </div>
+                    <!-- repetir os outros cards -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================================== -->
+    <!-- FOOTER (criar o footer.css depois) -->
+    <!-- ======================================== -->
+    <footer class="footer" style="background:#003087; color:white; padding:40px 0; text-align:center;">
+        <div class="container">
+            <img src="img/LogoMPBA.png" alt="MPBA" style="height:50px; margin-bottom:1rem;">
+            <p>Ministério Público do Estado da Bahia © 2025</p>
+            <p>Desenvolvido pelos alunos do 2º período TADS - Profª Maria Eugênia</p>
+        </div>
+    </footer>
+</body>
+</html>

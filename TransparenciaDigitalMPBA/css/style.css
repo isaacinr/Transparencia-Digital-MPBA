@@ -1,0 +1,72 @@
+/* ========================================
+   TRANSPARÊNCIA DIGITAL MPBA
+   Turma 2º Período Diurno - Profª Maria Eugênia
+   Código gerado com auxílio de IA (Grok 4) - permitido e sinalizado
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* Componentes */
+@import "components/header.css";
+@import "components/footer.css";
+@import "components/buttons.css";
+@import "components/cards.css";
+@import "components/buttons.css";   
+
+/* Estilos gerais */
+h1, h2, h3, h4 {
+    color: #003087;
+    font-weight: 700;
+}
+
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
+p { margin-bottom: 1rem; }
+
+/* Hero comum */
+.hero {
+    background: linear-gradient(rgba(0,48,135,0.85), rgba(0,48,135,0.85)), url('../img/banner-home.jpg') center/cover no-repeat;
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+/* Seções comuns */
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background: #f8f9fa;
+}

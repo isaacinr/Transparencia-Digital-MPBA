@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Atuação - Transparência Digital MPBA</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!-- HEADER (igual em todas) -->
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.png" alt="Logo MPBA">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="area-atuacao.html">Área de Atuação</a></li>
+                    <li><a href="area-servidor.html">Área do Servidor</a></li>
+                    <li><a href="conhecendo-mpba.html">Conhecendo o MPBA</a></li>
+                    <li><a href="comunicacao.html">Comunicação</a></li>
+                </ul>
+            </nav>
+            <div class="menu-mobile" onclick="document.querySelector('.nav ul').classList.toggle('active')">☰</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Área de Atuação</h1>
+            <p>Conheça as promotorias, procuradorias e áreas de atuação do Ministério Público da Bahia</p>
+        </div>
+    </section>
+
+    <main class="section-padding">
+        <div class="container">
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2rem;">
+                <div style="background:white; padding:2rem; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1); text-align:center;">
+                    <h2 style="color:#003087; margin-bottom:1rem;">Promotorias de Justiça</h2>
+                    <p>Listagem e contatos de todas as promotorias do estado</p>
+                    <a href="#" class="btn" style="display:inline-block; margin-top:1rem; background:#003087; color:white; padding:0.8rem 2rem; border-radius:5px; text-decoration:none;">Acessar</a>
+                </div>
+                <div style="background:white; padding:2rem; border-radius:8px; box-shadow:0 4px 15px rgba(0,0,0,0.1); text-align:center;">
+                    <h2 style="color:#003087; margin-bottom:1rem;">Procuradorias de Justiça</h2>
+                    <p>Estrutura e atuação das procuradorias</p>
+                    <a href="#" class="btn" style="display:inline-block; margin-top:1rem; background:#003087; color:white; padding:0.8rem 2rem; border-radius:5px; text-decoration:none;">Acessar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER (igual em todas) -->
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <img src="../img/logo.png" alt="MPBA">
+                <p>Ministério Público do Estado da Bahia</p>
+            </div>
+            <div>
+                <h4>Navegação</h4>
+                <a href="../index.html">Início</a>
+                <a href="area-atuacao.html">Área de Atuação</a>
+                <a href="area-servidor.html">Área do Servidor</a>
+                <a href="conhecendo-mpba.html">Conhecendo o MPBA</a>
+                <a href="comunicacao.html">Comunicação</a>
+            </div>
+            <div class="copy">
+                © 2025 Ministério Público do Estado da Bahia. Todos os direitos reservados.<br>
+                Desenvolvido pelos alunos do 2º período TADS - Profª Maria Eugênia
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
