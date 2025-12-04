@@ -1,145 +1,52 @@
 /* ============================================= */
-/* MPBA HEADER – ESTILO PRINCIPAL (DESKTOP)      */
+/* HEADER OFICIAL DO MPBA – VERSÃO CORRIGIDA     */
 /* ============================================= */
 
-.mpba-header { 
-    width: 100%; 
-    background: #fff; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+.mpba-header {
+    width: 100%;
+    background: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.mpba-header .container { 
-    max-width: 1240px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
+/* CONTAINER PRINCIPAL → controla TODA a centralização e margens */
+.container {
+    max-width: 1240px;        /* largura máxima do conteúdo */
+    width: 100%;
+    margin: 0 auto;           /* CENTRALIZA horizontalmente */
+    padding: 0 20px;          /* margem lateral em telas pequenas */
+    box-sizing: border-box;
 }
 
 /* Topbar */
-.mpba-topbar { 
-    padding: 20px 0; 
-    border-bottom: 1px solid #e0e0e0; 
-}
-.mpba-topbar .container { 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
-.mpba-logo img { 
-    height: 62px; 
-}
-.mpba-topbuttons { 
-    display: flex; 
-    gap: 12px; 
-}
+.mpba-topbar { padding: 20px 0; border-bottom: 1px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+.mpba-logo img { height: 62px; }
+.mpba-topbuttons { display: flex; gap: 12px; flex-wrap: wrap; }
 
-.btn-top {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 11px 22px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-}
+/* Botões superiores */
+.btn-top { display: inline-flex; align-items: center; gap: 8px; padding: 11px 22px; border-radius: 6px; font-weight: 600; font-size: 0.95rem; text-decoration: none; white-space: nowrap; transition: all 0.3s; }
 .btn-atendimento { background: #003087; color: #fff; }
 .btn-servidor     { background: #1a1a1a; color: #fff; }
-.btn-top:hover { 
-    opacity: 0.92; 
-    transform: translateY(-2px); 
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15); 
-}
+.btn-top:hover { opacity: 0.92; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
 
-/* Menu principal */
-.mpba-mainnav { 
-    background: #f8f9fa; 
-    border-bottom: 1px solid #dee2e6; 
-}
-.mpba-menu { 
-    display: flex; 
-    list-style: none; 
-    margin: 0; 
-    padding: 0; 
-}
-.mpba-menu a { 
-    display: block; 
-    padding: 16px 24px; 
-    color: #333; 
-    text-decoration: none; 
-    font-weight: 500; 
-}
-.mpba-menu a:hover { 
-    background: #e9ecef; 
-}
+/* Menu */
+.mpba-mainnav { background: #f8f9fa; border-bottom: 1px solid #dee2e6; }
+.mpba-menu { display: flex; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; justify-content: center; }
+.mpba-menu a { display: block; padding: 16px 24px; color: #333; text-decoration: none; font-weight: 500; }
+.mpba-menu a:hover { background: #e9ecef; }
 
-/* Barra de pesquisa */
-.mpba-searchbar { 
-    padding: 32px 0; 
-    background: #fff; 
-    border-bottom: 1px solid #dee2e6; 
-}
-.search-wrapper { 
-    position: relative; 
-    max-width: 720px; 
-    margin: 0 auto; 
-}
-.search-input {
-    width: 100%;
-    padding: 18px 120px 18px 24px;
-    font-size: 1.1rem;
-    border: 2px solid #ced4da;
-    border-radius: 50px;
-    outline: none;
-    transition: all 0.3s;
-}
-.search-input:focus { 
-    border-color: #003087; 
-    box-shadow: 0 0 0 4px rgba(0,48,135,0.1); 
-}
-
-.search-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #003087;
-    color: #fff;
-    border: none;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.voice-btn   { right: 62px; }
-.submit-btn  { right: 8px; }
+/* Barra de busca */
+.mpba-searchbar { padding: 32px 0; }
+.search-wrapper { position: relative; max-width: 720px; margin: 0 auto; }
+.search-input { width: 100%; padding: 18px 120px 18px 24px; font-size: 1.1rem; border: 2px solid #ced4da; border-radius: 50px; outline: none; }
+.search-input:focus { border-color: #003087; box-shadow: 0 0 0 4px rgba(0,48,135,0.1); }
+.search-btn { position: absolute; top: 50%; transform: translateY(-50%); background: #003087; color: #fff; border: none; width: 48px; height: 48px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.voice-btn { right: 62px; }
+.submit-btn { right: 8px; }
 .search-btn:hover { background: #00205b; }
 
 /* Banner Cegonha */
-.mpba-banner-cegonha {
-    background: linear-gradient(90deg, #e8f5e8 0%, #d0f0d0 100%);
-    padding: 36px 0;
-    margin-bottom: 40px;
-}
-.banner-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-.banner-text {
-    color: #1e6b1e;
-    font-size: 1.15rem;
-    line-height: 1.45;
-}
-.banner-highlight {
-    color: #c00;
-    font-weight: 700;
-    font-size: 1.35rem;
-}
-.banner-image img {
-    max-height: 180px;
-}
+.mpba-banner-cegonha { background: linear-gradient(90deg, #e8f5e8, #d0f0d0); padding: 36px 0; margin-bottom: 40px; }
+.banner-content { display: flex; align-items: center; justify-content: space-around; gap: 30px; flex-wrap: wrap; }
+.banner-text { color: #1e6b1e; font-size: 1.15rem; line-height: 1.45; }
+.banner-highlight { color: #c00; font-weight: 700; font-size: 1.35rem; }
+.banner-image img { max-height: 180px; }

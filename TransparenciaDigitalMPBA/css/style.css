@@ -7,8 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 20;
+    padding: 20;
     box-sizing: border-box;
 }
 
@@ -64,9 +64,237 @@ p { margin-bottom: 1rem; }
 
 /* Seções comuns */
 .section-padding {
-    padding: 80px 0;
+    padding: 80px 20;
 }
 
 .bg-light {
     background: #f8f9fa;
+}
+
+/* ===== CENTRALIZAÇÃO UNIVERSAL DO SITE (padrão MPBA 2025) ===== */
+.container,
+main > *, section > *, footer > *, .hero > *, .section-padding > * {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* ====== DESTAQUES - 2 BLOCOS LADO A LADO (respeita o .container) ====== */
+.destaques-section     { padding: 60px 0; border-block: 1px solid #e0e0e0; }
+.destaques-titulo      { text-align: center; font-size: 2rem; color: #003087; margin-bottom: 40px; font-weight: 700; }
+
+.destaques-duo         { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 32px; 
+}
+
+/* Cards iguais - reaproveita estilo do header */
+.destaque-card         { 
+    background: #fdf9f7; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 12px rgba(0,0,0,.08); 
+}
+.card-title            { background: #f5e6e0; padding: 16px; text-align: center; font-weight: 600; color: #333; }
+
+/* FAQ */
+.faq-lista             { padding: 20px; margin: 0; counter-reset: c; }
+.faq-lista li          { padding: 12px 0 12px 36px; position: relative; border-bottom: 1px solid #eee; }
+.faq-lista li:last-child { border: none; }
+.faq-lista li::before  { counter-increment: c; content: counter(c); position: absolute; left: 0; background: #003087; color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .8rem; font-weight: bold; }
+.faq-lista a           { color: #333; text-decoration: none; }
+.faq-lista a:hover     { color: #003087; }
+
+/* CARROSSEL SIMPLES */
+.carousel-simples      { position: relative; overflow: hidden; }
+.carousel-area         { overflow: hidden; }
+#carousel-area         { display: flex; transition: transform .5s ease; }
+.carousel-slide        { min-width: 100%; padding: 20px; display: flex; gap: 16px; align-items: center; background: white; }
+.carousel-slide img    { width: 110px; height: 110px; object-fit: cover; border-radius: 10px; flex-shrink: 0; }
+.carousel-slide h4     { font-size: .95rem; margin: 8px 0; line-height: 1.4; }
+.carousel-slide .tag   { background: #c00; color: #fff; padding: 3px 8px; border-radius: 4px; font-size: .7rem; font-weight: bold; }
+.carousel-seta         { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,.5); color: #fff; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.4rem; cursor: pointer; z-index: 10; }
+.carousel-seta:hover   { background: #003087; }
+.prev                  { left: 10px; }
+.next                  { right: 10px; }
+.carousel-pontos       { text-align: center; padding: 10px 0; }
+.carousel-pontos span  { display: inline-block; width: 8px; height: 8px; background: #ddd; border-radius: 50%; margin: 0 4px; cursor: pointer; }
+.carousel-pontos .active { background: #003087; }
+.carousel-loading      { text-align: center; padding: 30px; color: #666; }
+
+/* Responsivo - usa seu responsive.css existente */
+@media (max-width: 868px) {
+    .destaques-duo { grid-template-columns: 1fr; }
+    .carousel-slide { flex-direction: column; text-align: center; }
+    .carousel-slide img { width: 100%; max-width: 240px; height: auto; }
+}
+
+/* ====== ACORDEÃO DAS DÚVIDAS FREQUENTES ====== */
+.accordion-item {
+    border-bottom: 1px solid #eee;
+}
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    background: #fdf9f7;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s;
+}
+.accordion-header:hover { background: #f5e6e0; }
+.accordion-header::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003087;
+}
+.accordion-header.active::after { content: "−"; }
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background: white;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.accordion-content p {
+    padding: 20px 0;
+    margin: 0;
+    line-height: 1.6;
+    color: #444;
+}
+.accordion-content a {
+    color: #003087;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Quando aberto */
+.accordion-item.active .accordion-content {
+    max-height: 300px; /* ajuste conforme necessário */
+    padding: 0 20px 20px;
+}
+
+/* Responsivo já reaproveita seu responsive.css */
+@media (max-width: 868px) {
+    .destaques-duo { grid-template-columns: 1fr; }
+}
+
+/* CARROSSEL IGUAL AO MPBA - COMO NA IMAGEM */
+.mpba-slide-carrossel {
+    position: relative;
+    overflow: hidden;
+    background: white;
+    border-radius: 0 0 12px 12px;
+    height: 320px; /* altura da imagem */
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* transição rápida */
+    height: 100%;
+}
+
+.slide-item {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    background: #f8f9fa;
+}
+
+.slide-item img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.slide-content {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.slide-titulo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #003087;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.slide-tag {
+    background: linear-gradient(135deg, #c00, #e60000);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px 0 25px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.slide-btn {
+    background: linear-gradient(135deg, #003087, #0056b3);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 0 25px 0 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.3s;
+    align-self: flex-start;
+}
+
+.slide-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,48,135,0.3);
+}
+
+.slide-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.slide-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(0,48,135,0.3);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slide-dots .active {
+    background: #003087;
+}
+
+/* Responsivo (reaproveita seu breakpoint) */
+@media (max-width: 868px) {
+    .mpba-slide-carrossel { height: 280px; }
+    .slide-item { flex-direction: column; }
+    .slide-item img { width: 100%; height: 50%; }
+    .slide-content { width: 100%; padding: 20px; text-align: center; }
+    .slide-titulo { font-size: 1.1rem; }
+    .slide-tag, .slide-btn { align-self: center; }
 }

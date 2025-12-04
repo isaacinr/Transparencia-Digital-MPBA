@@ -5,74 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ministério Público do Estado da Bahia</title>
 
-    <!-- Seus estilos atuais -->
+    <!-- 1. Reset + seu estilo antigo (deixe como está) -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Componente Header Oficial do MPBA -->
+    <!-- 2. HEADER OFICIAL DO MPBA (agora com alinhamento perfeito) -->
     <link rel="stylesheet" href="css/components/header.css">
 
-    <!-- Responsivo (sempre por último, depois de todos os CSS) -->
+    <!-- 3. RESPONSIVO + CENTRALIZAÇÃO UNIVERSAL (sempre por último!) -->
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Ícones (Font Awesome) -->
+    <!-- Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <!-- HEADER OFICIAL DO MPBA -->
     <header class="mpba-header">
+        <div class="container"> <!-- ESSA DIV CONTAINER CONTROLA TODA A CENTRALIZAÇÃO -->
 
-        <!-- TOPBAR: Logo + Botões -->
-        <div class="mpba-topbar">
-            <div class="container">
-                <a href="https://mpba.mp.br" class="mpba-logo">
-                    <img src="img/LogoMPBA.png" alt="Ministério Público do Estado da Bahia">
+            <!-- Topbar: Logo + Botões -->
+            <div class="mpba-topbar">
+                <a href="#" class="mpba-logo">
+                    <img src="img/LogoMPBA.png" alt="MPBA">
                 </a>
-
                 <div class="mpba-topbuttons">
                     <a href="#" class="btn-top btn-atendimento">
-                        <i class="fas fa-headset"></i>
-                        Atendimento ao Cidadão
+                        <i class="fas fa-headset"></i> Atendimento ao Cidadão
                     </a>
                     <a href="#" class="btn-top btn-servidor">
-                        <i class="fas fa-user"></i>
-                        Área Servidor
+                        <i class="fas fa-user"></i> Área Servidor
                     </a>
                 </div>
             </div>
-        </div>
 
-        <!-- MENU PRINCIPAL -->
-        <nav class="mpba-mainnav">
-            <div class="container">
+            <!-- Menu principal -->
+            <nav class="mpba-mainnav">
                 <ul class="mpba-menu">
                     <li><a href="#">Conheça o MP</a></li>
                     <li><a href="#">Áreas de Atuação</a></li>
                     <li><a href="#">Serviços</a></li>
                     <li><a href="#">Comunicação</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
 
-        <!-- BARRA DE PESQUISA -->
-        <div class="mpba-searchbar">
-            <div class="container">
+            <!-- Barra de pesquisa -->
+            <div class="mpba-searchbar">
                 <div class="search-wrapper">
-                    <input type="text" class="search-input" placeholder="O que você procura?" aria-label="Pesquisa no site">
-                    <button class="search-btn voice-btn" aria-label="Pesquisa por voz">
-                        <i class="fas fa-microphone"></i>
-                    </button>
-                    <button class="search-btn submit-btn" aria-label="Buscar">
-                        <i class="fas fa-search"></i>
-                    </button>
+                    <input type="text" class="search-input" placeholder="O que você procura?">
+                    <button class="search-btn voice-btn"><i class="fas fa-microphone"></i></button>
+                    <button class="search-btn submit-btn"><i class="fas fa-search"></i></button>
                 </div>
             </div>
-        </div>
 
-        <!-- BANNER APP CEGONHA (opcional – delete se não quiser na home) -->
-        <div class="mpba-banner-cegonha">
-            <div class="container">
+            <!-- Banner Cegonha (opcional) -->
+            <div class="mpba-banner-cegonha">
                 <div class="banner-content">
                     <div class="banner-text">
                         <strong>APLICATIVO CEGONHA:</strong><br>
@@ -80,17 +67,86 @@
                         <span class="banner-highlight">BAIXE O APP. É GRATUITO.</span>
                     </div>
                     <div class="banner-image">
-                        <img src="img/banner-cegonha.jpg" alt="Aplicativo Cegonha - MPBA">
+                        <img src="img/banner-cegonha.jpg" alt="App Cegonha">
                     </div>
                 </div>
             </div>
-        </div>
+
+        </div> <!-- FIM DO CONTAINER -->
     </header>
 
-    <!-- Seu conteúdo principal começa aqui -->
-    <main>
-        <!-- seus cards, seções, etc. -->
+    <!-- Todo o resto do seu conteúdo (main, footer, etc.) -->
+    <main class="site-main">
+        <div class="container"> <!-- AQUI TAMBÉM USA O MESMO CONTAINER -->
+           <!-- ==================== DESTAQUES ==================== -->
+            <!-- ==================== DESTAQUES - DOIS BLOCOS LADO A LADO ==================== -->
+                <!-- ==================== DESTAQUES COM ACORDEÃO ==================== -->
+<section class="destaques-section">
+    <h2 class="destaques-titulo">Destaques</h2>
+
+    <div class="destaques-duo">
+
+        <!-- BLOCO 1: DÚVIDAS FREQUENTES COM ACORDEÃO -->
+        <div class="destaque-card">
+            <div class="card-title">Dúvidas Frequentes</div>
+            <div class="accordion">
+
+                <div class="accordion-item">
+                    <button class="accordion-header">Onde encontrar o MP?</button>
+                    <div class="accordion-content">
+                        <p>O Ministério Público da Bahia possui unidades em diversas cidades do estado. Você pode encontrar a promotoria mais próxima através do <a href="https://mpba.mp.br/localizacao" target="_blank">buscador de unidades</a> no site oficial.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">Quais são as áreas de atuações do MP?</button>
+                    <div class="accordion-content">
+                        <p>O MPBA atua em defesa da cidadania, meio ambiente, infância e juventude, direitos humanos, patrimônio público, consumidor, saúde, educação e combate à corrupção.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">O que é o Ministério Público?</button>
+                    <div class="accordion-content">
+                        <p>O Ministério Público é uma instituição permanente, essencial à função jurisdicional do Estado, incumbida da defesa da ordem jurídica, do regime democrático e dos interesses sociais e individuais indisponíveis.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">Quais horários de funcionamento e Atendimento do MP?</button>
+                    <div class="accordion-content">
+                        <p>O atendimento ao público geralmente ocorre das 8h às 14h, de segunda a sexta-feira. Algumas unidades têm horários específicos. Consulte a unidade mais próxima.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">Quem integra o Ministério Público?</button>
+                    <div class="accordion-content">
+                        <p>É composto por Promotores e Procuradores de Justiça, servidores, estagiários e colaboradores, todos trabalhando em prol da defesa da sociedade.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARROSSEL IDÊNTICO AO MPBA OFICIAL -->
+            <!-- CARROSSEL EXATO DA IMAGEM DO MPBA -->
+    <div class="destaque-card">
+        <div class="card-title">Notícias</div>
+        <div class="mpba-slide-carrossel">
+            <div class="slide-container" id="slide-container">
+                <!-- Slides gerados pelo JS -->
+            </div>
+            <div class="slide-dots" id="slide-dots"></div>
+        </div>
+    </div>
+    </section>
+    </div>
     </main>
+
+    <script src="js/noticias_carousel.js"></script>
+    <script src="js/destaques.js"></script>
+
 
 </body>
 </html>
