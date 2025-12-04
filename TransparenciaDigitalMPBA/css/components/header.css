@@ -42,8 +42,12 @@
 .search-btn:hover { background: #00205b; }
 
 /* Banner Cegonha */
-.mpba-banner-cegonha { background: linear-gradient(90deg, #e8f5e8, #d0f0d0); padding: 36px 0; margin-bottom: 40px; }
+.mpba-banner-cegonha { background: linear-gradient(90deg, #ffffff, #ffffff); padding: 36px 0; margin-bottom: 40px; }
 .banner-content { display: flex; align-items: center; justify-content: space-around; gap: 30px; flex-wrap: wrap; }
 .banner-text { color: #1e6b1e; font-size: 1.15rem; line-height: 1.45; }
-.banner-highlight { color: #c00; font-weight: 700; font-size: 1.35rem; }
-.banner-image img { max-height: 180px; }
+.banner-highlight { color: #c00; font-weight: 70; font-size: 1.35rem; }
+.banner-image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
