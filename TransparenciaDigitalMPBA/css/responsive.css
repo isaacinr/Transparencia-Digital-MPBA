@@ -1,42 +1,31 @@
-/* ======================================== */
-/* RESPONSIVO */
-/* ======================================== */
+/* ============================================= */
+/* RESPONSIVO DO HEADER MPBA                     */
+/* Sempre carregue esse arquivo por último!      */
+/* ============================================= */
 
 @media (max-width: 992px) {
-    .hero h1 { font-size: 2.8rem; }
-    .hero p { font-size: 1.2rem; }
+    .mpba-menu { justify-content: center; flex-wrap: wrap; }
+    .mpba-menu a { padding: 14px 18px; font-size: 0.95rem; }
 }
 
 @media (max-width: 768px) {
-    .nav ul {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background: #003087;
-        flex-direction: column;
-        width: 100%;
-        height: calc(100vh - 80px);
-        padding: 2rem 0;
-        transition: 0.4s;
-    }
+    .mpba-topbar .container { flex-direction: column; text-align: center; gap: 20px; }
+    .mpba-topbuttons { justify-content: center; flex-wrap: wrap; }
+    .btn-top { padding: 10px 18px; font-size: 0.9rem; }
 
-    .nav ul.active {
-        left: 0;
-    }
+    .search-input { padding-right: 100px; }
 
-    .nav a {
-        display: block;
-        padding: 1rem 5%;
-        font-size: 1.3rem;
-    }
+    .banner-content { flex-direction: column; text-align: center; }
+    .banner-text { font-size: 1.05rem; }
+    .banner-highlight { font-size: 1.25rem; }
+}
 
-    .menu-mobile {
-        display: block;
-    }
+@media (max-width: 480px) {
+    .mpba-logo img { height: 50px; }
+    .mpba-topbuttons { flex-direction: column; width: 100%; }
+    .btn-top { justify-content: center; width: 90%; max-width: 300px; }
 
-    .hero {
-        padding: 140px 0 60px;
-    }
-
-    .hero h1 { font-size: 2.4rem; }
+    .search-input { padding: 16px 90px 16px 20px; font-size: 1rem; }
+    .search-btn { width: 44px; height: 44px; }
+    .voice-btn { right: 56px; }
 }
