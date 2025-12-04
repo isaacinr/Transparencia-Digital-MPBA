@@ -1,7 +1,7 @@
-// js/destaques.js → com autoplay infinito + pausa no hover
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    // ====== ACORDEÃO (mantido igual) ======
+    //acordeao
     document.querySelectorAll(".accordion-header").forEach(btn => {
         btn.addEventListener("click", () => {
             const item = btn.parentElement;
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             let slidesHTML = "";
 
             itens.forEach((item, i) => {
-                if (i >= 8) return; // até 8 notícias (fica mais fluido)
+                if (i >= 8) return; // até 8 notícias 
                 const titulo = item.querySelector("title")?.textContent || "Notícia";
                 const link = item.querySelector("link")?.textContent || "#";
                 const desc = item.querySelector("description")?.textContent || "";

@@ -1,14 +1,13 @@
-// js/mpba-carrossel.js → IGUAL AO DA IMAGEM, AUTOPLAY 5s, SEM ERROS
+
 document.addEventListener("DOMContentLoaded", function() {
     const container = document.getElementById("slide-container");
     const dotsContainer = document.getElementById("slide-dots");
 
-    // EDITE AQUI SUAS NOTÍCIAS (como na imagem)
     const noticias = [
         {
             titulo: "Plano de Ação Direito de Defesa das Crianças e Adolescentes no Ambiente Digital",
             link: "https://mpba.mp.br/noticia/direitos-digitais",
-            img: "img/noticias/direitos-criancas.jpeg", // imagem da criança com tablet
+            img: "img/noticias/direitos-criancas.jpeg", 
             tag: "Plano de Ação Direito de"
         },
         {
@@ -24,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             img: "img/noticias/cegonha.jpg",
             tag: "Aplicativo Cegonha"
         }
-        // Adicione mais: copie o bloco acima
+       
     ];
 
     let currentIndex = 0;
@@ -72,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function startInterval() {
-        intervalId = setInterval(nextSlide, 4000); // 5s como no oficial
+        intervalId = setInterval(nextSlide, 4000); // 5s como no portal oficial
     }
 
     function resetInterval() {

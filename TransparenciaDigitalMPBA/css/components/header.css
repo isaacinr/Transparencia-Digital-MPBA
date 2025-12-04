@@ -1,6 +1,3 @@
-/* ============================================= */
-/* HEADER OFICIAL DO MPBA – VERSÃO CORRIGIDA     */
-/* ============================================= */
 
 .mpba-header {
     width: 100%;
@@ -8,7 +5,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* CONTAINER PRINCIPAL → controla TODA a centralização e margens */
+/* CONTAINER PRINCIPAL -> controla TODA a centralização e margens */
 .container {
     max-width: 1240px;        /* largura máxima do conteúdo */
     width: 100%;
