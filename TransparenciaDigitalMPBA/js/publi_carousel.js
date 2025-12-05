@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const dotsContainer = document.getElementById("footer-dots");
 
   const publicacoes = [
-    { img: "img/photos/acao.avif",                     tag: "19 e 20 OUT", color: "#6a1b9a", titulo: "IV WORKSHOP DO PROJETO VIDA LONGA",               btn: "Saiba mais",      url: "https://www.mpba.mp.br/noticia/12345" },
+    { img: "img/photos/acao.avif",                     tag: "19 e 20 OUT", color: "#6a1b9a", titulo: "IV WORKSHOP DO PROJETO VIDA LONGA",               btn: "Saiba mais",      url: "https://www.mpba.mp.br/noticia/79343" },
     { img: "img/photos/card-vida-longa.jpg",           tag: "14 OUT",      color: "#c62828", titulo: "IAVV – Instituto de Ação Voluntária",                btn: "Saiba mais",      url: "https://www.mpba.mp.br/noticia/67890" },
     { img: "img/photos/pga-2025-01-388x297.png",       tag: null,          color: "#d32f2f", titulo: "PLANO GERAL DE ATUAÇÃO 2025",                        btn: "CLIQUE E CONFIRA",url: "https://www.mpba.mp.br/plano2025" },
     { img: "img/photos/images.jpg",                    tag: null,          color: "#f9a825", titulo: "GUIA: Retificação do Registro Civil",                btn: "CLIQUE E BAIXE",  url: "https://www.mpba.mp.br/guia-retificacao" },
