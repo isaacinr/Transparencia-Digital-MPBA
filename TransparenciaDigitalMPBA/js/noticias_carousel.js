@@ -6,21 +6,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const noticias = [
         {
             titulo: "Plano de Ação Direito de Defesa das Crianças e Adolescentes no Ambiente Digital",
-            link: "https://mpba.mp.br/noticia/direitos-digitais",
+            link: "https://falafilho.mpba.mp.br/campanha/",
             img: "img/noticias/direitos-criancas.jpeg", 
             tag: "Plano de Ação Direito de"
         },
         {
             titulo: "PGJ Itinerante: MPBA realiza 1,6 mil atendimentos em Irecê",
-            link: "https://mpba.mp.br/noticia/irece",
+            link: "https://gestaoestrategica.mpba.mp.br/gestao-estrategica/portfolio-de-projetos/pgj-itinerante",
             img: "img/noticias/irece.jpeg",
             tag: "Projeto Itinerante"
         },
         
         {
             titulo: "Lançamento do App Cegonha: direitos na palma da mão",
-            link: "https://mpba.mp.br/app-cegonha",
-            img: "img/noticias/cegonha.jpg",
+            link: "https://cegonha.mpba.mp.br/",
+            img: "img/photos/projeto cegonha",
             tag: "Aplicativo Cegonha"
         }
        
