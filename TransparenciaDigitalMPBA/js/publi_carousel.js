@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const dotsContainer = document.getElementById("footer-dots");
 
   const publicacoes = [
-    { img: "img/photos/card-vida-longa.jpg",                     tag: "19 e 20 OUT", color: "#6a1b9a", titulo: "IV WORKSHOP DO PROJETO VIDA LONGA",               btn: "Saiba mais",      url: "https://www.mpba.mp.br/projeto/projeto-vida-longa" },
-    { img: "img/photos/serviço voluntario.jpg",           tag: "14 OUT",      color: "#c62828", titulo: "Instituto de Ação Voluntária",                btn: "Saiba mais",      url: "https://ceaf.mpba.mp.br/servico-voluntario/" },
-    { img: "img/photos/plano geral de atuacao 2025.png",       tag: null,          color: "#d32f2f", titulo: "PLANO GERAL DE ATUAÇÃO 2025",                        btn: "CLIQUE E CONFIRA",url: "https://infomail.mpba.mp.br/wp-content/uploads/2025/01/PGA-2025.pdf" },
-    { img: "img/photos/cartilha.png",                    tag: null,          color: "#f9a825", titulo: "GUIA: Retificação do Registro Civil",                btn: "CLIQUE E BAIXE",  url: "https://www.mpba.mp.br/sites/default/files/institucional/2024/mpdiverso_cartliha_a5.pdf" },
-    { img: "img/photos/corrupcao.jpg",         tag: "EM BREVE",    color: "#1976d2", titulo: "Seminário Nacional de Combate à Corrupção",          btn: "Em breve",        url: "#" }
+    { img: "/TransparenciaDigitalMPBA/img/photos/card-vida-longa.jpg",                     tag: "19 e 20 OUT", color: "#6a1b9a", titulo: "IV WORKSHOP DO PROJETO VIDA LONGA",               btn: "Saiba mais",      url: "https://www.mpba.mp.br/projeto/projeto-vida-longa" },
+    { img: "/TransparenciaDigitalMPBA/img/photos/serviço voluntario.jpg",           tag: "14 OUT",      color: "#c62828", titulo: "Instituto de Ação Voluntária",                btn: "Saiba mais",      url: "https://ceaf.mpba.mp.br/servico-voluntario/" },
+    { img: "/TransparenciaDigitalMPBA/img/photos/plano geral de atuacao 2025.png",       tag: null,          color: "#d32f2f", titulo: "PLANO GERAL DE ATUAÇÃO 2025",                        btn: "CLIQUE E CONFIRA",url: "https://infomail.mpba.mp.br/wp-content/uploads/2025/01/PGA-2025.pdf" },
+    { img: "/TransparenciaDigitalMPBA/img/photos/cartilha.png",                    tag: null,          color: "#f9a825", titulo: "GUIA: Retificação do Registro Civil",                btn: "CLIQUE E BAIXE",  url: "https://www.mpba.mp.br/sites/default/files/institucional/2024/mpdiverso_cartliha_a5.pdf" },
+    { img: "/TransparenciaDigitalMPBA/img/photos/corrupcao.jpg",         tag: "EM BREVE",    color: "#1976d2", titulo: "Seminário Nacional de Combate à Corrupção",          btn: "Em breve",        url: "#" }
   ];
 
   let currentIndex = 0;
