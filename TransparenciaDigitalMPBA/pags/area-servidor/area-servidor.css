@@ -70,8 +70,7 @@ header {
 
 .breadcrumb {
     padding: 15px 40px;
-    background-color: #fff;
-    font-size: 14px;
+    font-size: 20px;
     color: #666;
 }
 
@@ -178,3 +177,10 @@ h1 {
         max-width: 300px;
     }
 }
+  .busca {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }

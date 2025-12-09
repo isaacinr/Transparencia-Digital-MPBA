@@ -4,24 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conhecendo o MPBA - Transparência Digital</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="conhecendo-mpba.css"> <!-- Novo CSS específico -->
+     <link rel="icon" href="/TransparenciaDigitalMPBA/img/photos/logo mpba aba.png" type="png">
+    <link rel="stylesheet" href="/TransparenciaDigitalMPBA/pags/conhecendo-mpba/conhecendo-mpba.css">
+    <link rel="stylesheet" href="/TransparenciaDigitalMPBA/css/style.css">
+    <link rel="stylesheet" href="/TransparenciaDigitalMPBA/css/reset.css">
+    <link rel="stylesheet" href="/TransparenciaDigitalMPBA/css/responsive.css">
+    <!-- 2. HEADER OFICIAL DO MPBA  -->
+    <link rel="stylesheet" href="/TransparenciaDigitalMPBA/css/components/header.css">
+
+    <!-- 3. RESPONSIVO + CENTRALIZAÇÃO UNIVERSAL -->
+    <link rel="stylesheet" href="/TransparenciaDigitalMPBA/css/responsive.css">
+
+    <!-- Ícones vlibras -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </head>
 <body>
 
-    <!-- HEADER (mantenha o seu original) -->
-    <header class="header">… (seu header completo) …</header>
+    <header class="mpba-header">
+        <div class="container"
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <h1>Conhecendo o MPBA</h1>
-            <p>História, missão, visão e estrutura organizacional</p>
-        </div>
-    </section>
-    <!--vlibras-->
+            <!-- Topbar: Logo + Botões -->
+            <div class="mpba-topbar">
+                <a href="/TransparenciaDigitalMPBA/index.html" class="mpba-logo">
+                    <img src="/TransparenciaDigitalMPBA/img/photos/LogoMPBA.png" alt="MPBA">
+                </a>
+                <div class="mpba-topbuttons">
+                    <a href="#" class="btn-top btn-atendimento">
+                        <i class="fa fa-users"></i> Atendimento ao Cidadão
+                    </a>
+                    <a href="/TransparenciaDigitalMPBA/pags/area-servidor/area-servidor.html" class="btn-top btn-servidor">
+                        <i class="fas fa-user"></i> Área Servidor
+                    </a>
+                </div>
+            </div>
+
+            <!-- Menu principal -->
+            <nav class="mpba-mainnav">
+                <ul class="mpba-menu">
+                    <li><a href="/TransparenciaDigitalMPBA/pags/conhecendo-mpba/conhecendo-mpba.html">Conheça o MP</a></li>
+                    <li><a href="/TransparenciaDigitalMPBA/pags/area-atuacao/area-atuacao.html">Áreas de Atuação</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="/TransparenciaDigitalMPBA/pags/comunicacao/comunicacao.html">Comunicação</a></li>
+                </ul>
+            </nav>
+
+        </div> 
+    </header>
+<body>
+    
+<!--vlibras-->
 <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -29,49 +64,36 @@
         </div>
  </div>
 
-    <!-- MISSÃO, VISÃO E VALORES -->
-    <section class="section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title">Missão, Visão e Valores</h2>
-            <div class="cards-mvv">
-                <div class="card-mvv">
-                    <h3>Missão</h3>
-                    <p>Defender a ordem jurídica, o regime democrático e os interesses sociais e individuais indisponíveis.</p>
-                </div>
-                <div class="card-mvv">
-                    <h3>Visão</h3>
-                    <p>Ser referência nacional em defesa da sociedade e do meio ambiente.</p>
-                </div>
-                <div class="card-mvv">
-                    <h3>Valores</h3>
-                    <p>Legalidade, imparcialidade, transparência, eficiência e compromisso social.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container" >
+        <main>
+
 
     <!-- ACESSO RÁPIDO (Populares + Saiba Mais) -->
     <section class="section-padding">
-        <div class="container">
+        <br>
             <h2 class="section-title">Acesso Rápido</h2>
 
             <div class="acesso-rapido-grid">
                 <!-- Coluna Populares -->
                 <div class="col-populares">
                     <h3 class="tab-title">Populares</h3>
-                    <a href="#" class="item-popular">
+                    <a href="https://atendimento.mpba.mp.br/areas-de-atuacao/" class="item-popular">
+                        <img src="/TransparenciaDigitalMPBA/img/photos/logo mpba escura.png"
                         <span class="icon mp-logo"></span>
                         <span>Como o MP atua?</span>
                     </a>
-                    <a href="#" class="item-popular">
+                    <a href="https://infomail.mpba.mp.br/index.php/conhecendo-o-mp-cartilha-digital/" class="item-popular">
+                        <img src="/TransparenciaDigitalMPBA/img/photos/missao.png"
                         <span class="icon missao"></span>
                         <span>Missão e Valores do MP</span>
                     </a>
-                    <a href="#" class="item-popular">
+                    <a href="https://atendimento.mpba.mp.br/" class="item-popular">
+                        <img src="/TransparenciaDigitalMPBA/img/icons/ouvidoria.png"
                         <span class="icon ouvidoria"></span>
                         <span>Fale com o MP / Ouvidoria</span>
                     </a>
-                    <a href="#" class="item-popular">
+                    <a href="http://www.perfil.sistemas.mpba.mp.br/Modulos/PJMPE/TelaInicial/TelaInicial.aspx" class="item-popular">
+                        <img src="/TransparenciaDigitalMPBA/img/photos/promotorias e procuradorias.png"
                         <span class="icon promotorias"></span>
                         <span>Promotorias e Procuradorias</span>
                     </a>
@@ -80,26 +102,68 @@
                 <!-- Coluna Saiba Mais (Banner) -->
                 <div class="col-saiba">
                     <h3 class="tab-title">Saiba Mais</h3>
-                    <div class="banner-fddf">
-                        <img src="../img/fddf-mpba.jpg" alt="Fundo de Defesa dos Direitos Fundamentais">
-                        <div class="banner-overlay">
-                            <h4>Fundo de Defesa dos<br>Direitos Fundamentais MPBA</h4>
-                            <a href="#" class="btn-banner">Clique e conheça</a>
-                        </div>
+                   <a href="#">
+                     <div class="banner-fddf">
+                        <img src="/TransparenciaDigitalMPBA/img/photos/banner-destaque-fddf-conheca.png" alt="Fundo de Defesa dos Direitos Fundamentais">
                     </div>
+                   </a>
+                </div>
+            </div>
+            <br>
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="organograma">
+
+                <!-- NÍVEL 1 – 4 cards -->
+                <div class="nivel">
+                    <a href="https://infomail.mpba.mp.br/index.php/conhecendo-o-mp-cartilha-digital/" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/conheca o mpba.png" alt="O que é o MP"><p>O que é o MP</p></a>
+                    <a href="https://www.mpba.mp.br/institucional/administracao-superior" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/administracaosuperior.avif" alt="Administração Superior"><p>Administração Superior</p></a>
+                    <a href="https://www.mpba.mp.br/institucional/corregedoria" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/corrigedoria.png" alt="Corregedoria Geral"><p>Corregedoria Geral</p></a>
+                    <a href="https://www.mpba.mp.br/institucional/orgaos_colegiados" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/orgaos coligados.png" alt="Órgãos Colegiados"><p>Órgãos Colegiados</p></a>
+                    <a href="https://www.mpba.mp.br/institucional/organogramas" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/organogramas.png" alt="Organogramas"><p>Organogramas</p></a>
+                </div>
+
+                <!-- NÍVEL 2 – 4 cards + logo central -->
+                <div class="nivel">
+                    <a href="https://www.mpba.mp.br/institucional/procuradorias" class="card logo"><img src="/TransparenciaDigitalMPBA/img/photos/logo mpba escura.png" alt="Procuradorias de Justiça"><p>Procuradorias de Justiça</p></a>
+                    <a href="https://www.mpba.mp.br/institucional/secretaria-geral/apresentacao" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/secretaria geral.jpg" alt="Secretaria Geral"><p>Secretaria Geral</p></a>
+                    <a href="https://www.mpba.mp.br/institucional/gestao-administrativa" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/gestao administrativa.png" alt="Gestão Administrativa"><p>Gestão Administrativa</p></a>
+                    <a href="https://gestaoestrategica.mpba.mp.br/" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/gestao estrategica.png" alt="Gestão Estratégica"><p>Gestão Estratégica</p></a>
+                    <a href="https://ceaf.mpba.mp.br/" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/centros de estudo.png" alt="Centros de Estudo"><p>Centros de Estudo</p></a>
+                </div>
+
+                <!-- NÍVEL 3 – 4 cards -->
+                <div class="nivel">
+                    <a href="https://ceat.mpba.mp.br/" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/centro de apoio tecnico.png" alt="Central de Apoio Técnico"><p>Central de Apoio Técnico</p></a>
+                    <a href="https://www.mpba.mp.br/concursos" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/concursos-cmpba.png" alt="Concursos"><p>Concursos</p></a>
+                    <a href="https://memorial.mpba.mp.br/" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/centro de memoria.jpg" alt="Centro de Memória e Cultura"><p>Centro de Memória e Cultura</p></a>
+                    <a href="https://www.mpba.mp.br/instituicao/visitacao" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/progama de visitacao.jpg" alt="Programa de Visitação"><p>Programa de Visitação Ao Público</p></a>
+                    <a href="https://biblioteca.sistemas.mpba.mp.br/" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/legislacao.jpg" alt="Legislação"><p>Legislação</p></a>
+                </div>
+
+                <!-- NÍVEL 4 – 2 cards centralizados -->
+                <div class="nivel ultimo">
+                    <a href="https://www.mpba.mp.br/institucional/csi" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/seguranca institucional.png" alt="Segurança Institucional"><p>Segurança Institucional e Inteligência</p></a>
+                    <a href="https://www.mpba.mp.br/compor" class="card"><img src="/TransparenciaDigitalMPBA/img/icons/compor.png" alt="COMPOR"><p>COMPOR</p></a>
                 </div>
             </div>
         </div>
     </section>
 
+        </main>
+    </div>
+    
     <!-- FOOTER (mantenha o seu original) -->
-    <footer class="footer">
+    <div class="container">
+          <footer class="footer">
         <h2 class="footer-publicacoes-titulo">Publicações e Eventos</h2>
             <div class="footer-carousel">
                 <div class="footer-carousel-track" id="footer-track"></div>
             </div>
             <div class="footer-carousel-dots" id="footer-dots"></div>
-            <br>
+            
+    </div>
+  
 
             <div class="container">
                 <div class="footer-grid">
@@ -229,6 +293,13 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15551.740325523346!2d-38.504622!3d-12.976004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604c262c13879%3A0x9ece8d97af507088!2sMinist%C3%A9rio%20P%C3%BAblico%20do%20Estado%20da%20Bahia!5e0!3m2!1spt-BR!2sus!4v1764953230310!5m2!1spt-BR!2sus" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
     </footer>
+        <script src="/TransparenciaDigitalMPBA/js/publi_carousel.js"></script> 
 
-</body>
+        <button id="backTop" class="back-top" aria-label="Voltar ao topo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 19V5m-7 7l7-7 7 7"/>
+        </svg>
+    </button>
+        <script src="/TransparenciaDigitalMPBA/js/scroll.top.js"></script>
+</body>]
 </html>

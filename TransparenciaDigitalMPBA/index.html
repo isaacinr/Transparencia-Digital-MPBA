@@ -6,14 +6,15 @@
     <title>Ministério Público do Estado da Bahia</title>
 
     <link rel="icon" href="img/photos/logo mpba aba.png" type="png">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/TransparenciaDigitalMPBA/css/reset.css">
+    <link rel="stylesheet" href="/TransparenciaDigitalMPBA/css/style.css">
+    <link rel="stylesheet" href="/TransparenciaDigitalMPBA/css/components/buttons.css">
 
     <!-- 2. HEADER OFICIAL DO MPBA  -->
-    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="/TransparenciaDigitalMPBA/css/components/header.css">
 
     <!-- 3. RESPONSIVO + CENTRALIZAÇÃO UNIVERSAL -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="/TransparenciaDigitalMPBA/css/responsive.css">
 
     <!-- Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -221,9 +222,9 @@
                     <!-- COLUNA 3: VÍDEO INSTITUCIONAL (EMBUTIDO) + OUÇA AQUI -->
                     <div class="col-midia">
 
-                        <!-- ==================== VÍDEO INSTITUCIONAL EMBUTIDO - GERADO POR IA ==================== -->
                         <h3 class="col-title">VÍDEO INSTITUCIONAL</h3>
-                        <div class="video-wrapper">       
+                        <div>
+                            <div class="video-wrapper">       
                                 <iframe width="400" height="330" src="https://www.youtube.com/embed/jhg94NbsIMM?si=OmBe42Q40RIzzB7V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <div class="video-overlay">
                                 <a href="https://www.mpba.mp.br/videos">
@@ -231,6 +232,8 @@
                                 </a>
                             </div>
                         </div>
+                        </div>
+                        
 
                         <!-- ==================== OUÇA AQUI ==================== -->
                         <h3 class="col-title podcast-title">OUÇA AQUI</h3>
@@ -393,7 +396,12 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15551.740325523346!2d-38.504622!3d-12.976004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604c262c13879%3A0x9ece8d97af507088!2sMinist%C3%A9rio%20P%C3%BAblico%20do%20Estado%20da%20Bahia!5e0!3m2!1spt-BR!2sus!4v1764953230310!5m2!1spt-BR!2sus" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
     </div>
-
+     <button id="backTop" class="back-top" aria-label="Voltar ao topo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 19V5m-7 7l7-7 7 7"/>
+        </svg>
+    </button>
+    <script src="/TransparenciaDigitalMPBA/js/scroll.top.js"></script>
     <script src="js/noticias_carousel.js"></script>
     <script src="js/destaques.js"></script>
     <script src="js/publi_carousel.js"></script>
