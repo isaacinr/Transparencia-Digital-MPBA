@@ -60,3 +60,44 @@
 @media (max-width: 576px) {
     .back-top { width: 52px; height: 52px; bottom: 20px; right: 20px; }
 }
+.accessibility-btn {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 9999;
+
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.accessibility-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-50%) scale(1.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.accessibility-btn:focus {
+    outline: 4px solid #fff;
+    outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+    .accessibility-btn {
+        width: 55px;
+        height: 55px;
+        left: 15px;
+    }
+}
