@@ -1,4 +1,8 @@
-
+/* ========================================
+   TRANSPARÊNCIA DIGITAL MPBA
+   Turma 2º Período Diurno - Profª Maria Eugênia
+   Código gerado com auxílio de IA (Grok 4) - permitido e sinalizado
+   ======================================== */
 .footer-publicacoes {
   --color-primary: #003087;
   --radius: 20px;
@@ -33,14 +37,14 @@
 
 /* Card */
 .footer-card {
-  flex: 0 0 380px;           /* Tamanho fixo ideal em desktop */
+  flex: 0 0 380px; /* Tamanho fixo ideal em desktop */
   background: white;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: all 0.4s ease;
 
-  position: relative;        /* Para posicionar a tag */
+  position: relative; /* Para posicionar a tag */
 }
 
 .footer-card:hover {
@@ -108,8 +112,13 @@
   z-index: 10;
 }
 
-.footer-card-tag--data { left: 16px; }
-.footer-card-tag--soon { right: 16px; background: #1976d2; }
+.footer-card-tag--data {
+  left: 16px;
+}
+.footer-card-tag--soon {
+  right: 16px;
+  background: #1976d2;
+}
 
 /* Dots */
 .footer-carousel-dots {
@@ -153,12 +162,18 @@
 
 /* Responsivo */
 @media (max-width: 1200px) {
-  .footer-card { flex: 0 0 340px; }
+  .footer-card {
+    flex: 0 0 340px;
+  }
 }
 
 @media (max-width: 992px) {
-  .footer-card { flex: 0 0 calc(50% - 15px); }
-  .footer-carousel-track { gap: 30px; }
+  .footer-card {
+    flex: 0 0 calc(50% - 15px);
+  }
+  .footer-carousel-track {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -177,7 +192,7 @@
   background: #012363;
   color: #032a64;
   padding: 80px 0 40px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -235,7 +250,7 @@
 .footer-bottom {
   text-align: center;
   padding-top: 40px;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   color: #99bbff;
   font-size: 14px;
 }
@@ -263,7 +278,7 @@ footer.mpba-footer {
   background: #003087;
   color: #b8d4ff;
   padding: 80px 0 40px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -314,7 +329,7 @@ footer.mpba-footer .footer-col a:hover {
 
 /* Parte inferior isolada */
 .footer-bottom-bar {
-  background: #f8f7f7;  /* Azul mais escuro pro rodapé inferior */
+  background: #f8f7f7; /* Azul mais escuro pro rodapé inferior */
   color: #003087;
   padding: 60px 0 40px;
   font-size: 15px;
@@ -386,7 +401,7 @@ footer.mpba-footer .footer-col a:hover {
 .footer-bottom-bar .footer-copyright {
   text-align: center;
   padding-top: 30px;
-  border-top: 1px solid rgba(255,255,255,0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   color: #88aaff;
   font-size: 14px;
 }

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   let currentIndex = 0;
-  let cardWidth = 410; // valor inicial só pra não dar NaN
+  let cardWidth = 410; 
 
   // Renderiza os cards (todo o card vira link)
   function renderCards() {

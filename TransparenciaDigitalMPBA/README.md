@@ -9,7 +9,7 @@
 - Vinícius Nascimento Araújo
 
 ## Links
-- Repositório: (link do GitHub)
+- Repositório: https://github.com/isaacinr/Transparencia-Digital-MPBA.git
 - Site publicado: (link do GitHub Pages)
 
 ## Observações importantes
@@ -21,4 +21,4 @@
 - Uso eventual de IA devidamente sinalizado com:
   <!-- Código gerado com auxílio de IA  -->
 
-Entregue em 02/12/2025
+Entregue em 09/12/2025

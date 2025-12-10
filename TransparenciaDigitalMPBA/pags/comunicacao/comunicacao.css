@@ -1,52 +1,57 @@
+/* ========================================
+   TRANSPARÊNCIA DIGITAL MPBA
+   Turma 2º Período Diurno - Profª Maria Eugênia
+   Código gerado com auxílio de IA (Grok 4) - permitido e sinalizado
+   ======================================== */
 .tiles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .tile {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .tile:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .tile img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 1rem;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
 }
 
 .tile span {
-    font-weight: 600;
-    font-size: 1.1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
-    .tiles {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    .tile img {
-        width: 50px;
-        height: 50px;
-    }
-    .tile span {
-        font-size: 1rem;
-    }
+  .tiles {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .tile img {
+    width: 50px;
+    height: 50px;
+  }
+  .tile span {
+    font-size: 1rem;
+  }
 }
